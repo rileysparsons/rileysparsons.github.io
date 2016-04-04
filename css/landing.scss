@@ -58,8 +58,10 @@ html, body {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
   background: #fff;
+  font-family: 'Lato', serif;
 
   @media (min-width: 768px) {
    box-sizing: border-box;
@@ -97,29 +99,36 @@ a {
 
 div.links {
   width:100%;
-  display: block;
+  display: flex;
   padding-bottom: 60px;
+  margin: 0 auto;
+  flex: 1 1 auto;
 }
 
 a.box-link {
 	display: block;
   position:relative;
   overflow-y: hidden;
+  height: 300px;
 	float: left;
-	padding: 20px;
 	top: 35px;
+  padding: 0;
 
   @media (min-width: 768px){
-    width: 49%;
+    width: 50%;
   }
 }
 
 .box-link>div{
+  height: inherit;
   padding:20px;
 }
 
 .box-link .title{
+  display: block;
+  text-align: center;
   font-size: 30px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -127,8 +136,13 @@ a.box-link {
   clear:both;
 }
 
+div.content {
+  padding: 40px 60px;
+  display:flex;
+  align-items: center;
+}
+
 section.top {
-  font-family: 'Lato', serif;
 
   h1 {
 
@@ -172,7 +186,7 @@ section.top {
 
   @media (min-width: 768px) {
     right: 0;
-    padding-left:50px;
+    margin: 0 auto;
     bottom: 0;
     //text-align: center;
     height: inherit;
