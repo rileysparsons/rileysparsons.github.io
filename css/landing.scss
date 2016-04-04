@@ -1,0 +1,211 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+
+  @media (min-width: 768px) {
+   box-sizing: border-box;
+   border: 20px solid #fff;
+    background: #2F2F2F;
+  }
+}
+
+/**
+ * Links
+ */
+a {
+    color: #8ADD8A;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:visited {
+        color: darken(#8ADD8A, 15%);
+    }
+
+    &:hover {
+    	cursor: pointer;
+        color: #8ADD8A;
+        font-weight: 700;
+    }
+}
+
+section {
+  font-family: 'Lato', serif;
+
+  h1 {
+
+    left: 35px;
+    top: 35px;
+    font-weight: normal;
+    position: relative;
+    padding-right: 35px;
+    line-height: 1.2em;
+    font-size: 45px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  h2 {
+    left: 35px;
+    top: 35px;
+    font-weight: normal;
+    position: relative;
+    padding-right: 35px;
+    line-height: 1.2em;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  h3 {
+    left: 35px;
+    top: 35px;
+    font-weight: normal;
+    position: relative;
+    padding-right: 35px;
+    line-height: 1.2em;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    right: 0;
+    left: 35px;
+    top: 35px;
+    bottom: 0;
+    //text-align: center;
+    height: inherit;
+    //align-items: center;
+    //justify-content: center;
+
+    h1 {
+      position: relative;
+      // display: inline-block;
+      left: auto;
+      top: auto;
+      padding-right: 0;
+      color: #fff;
+    }
+
+    h2 {
+      position: relative;
+      // display: inline-block;
+      left: auto;
+      top: auto;
+      padding-right: 0;
+      color: #fff;
+    }
+
+    h3 {
+      position: relative;
+      // display: inline-block;
+      left: auto;
+      top: auto;
+      padding-right: 0;
+      color: #fff;
+    }
+  }
+}
+
+nav {
+  font-family: 'Courier New', serif;
+  position: absolute;
+  left: 25px;
+  bottom: 27px;
+  white-space: pre-line;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  @media (min-width: 768px) {
+    left: 30px;
+    right: 30px;
+    white-space: nowrap;
+    text-align: center;
+    bottom: 30px;
+    font-size: 0;
+
+    a {
+      font-size: 17px;
+      padding: 6px 19px;
+      color: #fff;
+
+      &:hover {
+        background: #f05c5c;
+      }
+    }
+  }
+
+  @media (max-height: 390px) and (min-width: 768px) {
+    display: none;
+  }
+}
