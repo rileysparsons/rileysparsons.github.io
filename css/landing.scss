@@ -46,7 +46,6 @@ $on-laptop:        800px;
 html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -69,6 +68,11 @@ body {
   }
 }
 
+div.wrapper{
+  min-height:100%;
+  position:relative;
+}
+
 /**
  * Links
  */
@@ -76,6 +80,7 @@ a {
     color: #8ADD8A;
     font-weight: 500;
     text-decoration: none;
+    padding: 6px 10px;
 
     &:visited {
         color: darken(#8ADD8A, 15%);
@@ -84,11 +89,45 @@ a {
     &:hover {
     	cursor: pointer;
         color: #8ADD8A;
-        font-weight: 700;
+        background: lighten(#8ADD8A, 25%);
     }
 }
 
-section {
+// Links Section
+
+div.links {
+  width:100%;
+  display: block;
+  padding-bottom: 60px;
+}
+
+a.box-link {
+	display: block;
+  position:relative;
+  overflow-y: hidden;
+	float: left;
+	padding: 20px;
+	top: 35px;
+
+  @media (min-width: 768px){
+    width: 49%;
+  }
+}
+
+.box-link>div{
+  padding:20px;
+}
+
+.box-link .title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.clearout {
+  clear:both;
+}
+
+section.top {
   font-family: 'Lato', serif;
 
   h1 {
@@ -132,10 +171,8 @@ section {
   }
 
   @media (min-width: 768px) {
-    position: absolute;
     right: 0;
-    left: 35px;
-    top: 35px;
+    padding-left:50px;
     bottom: 0;
     //text-align: center;
     height: inherit;
@@ -172,11 +209,12 @@ section {
 }
 
 nav {
-  font-family: 'Courier New', serif;
+  font-family: 'Lato', serif;
   position: absolute;
   left: 25px;
-  bottom: 27px;
-  white-space: pre-line;
+  bottom:20px;
+  height: 60px;
+  display:block;
 
   a {
     text-decoration: none;
@@ -191,7 +229,6 @@ nav {
     right: 30px;
     white-space: nowrap;
     text-align: center;
-    bottom: 30px;
     font-size: 0;
 
     a {
@@ -200,7 +237,7 @@ nav {
       color: #fff;
 
       &:hover {
-        background: #f05c5c;
+        background: lighten(#8ADD8A, 25%);
       }
     }
   }
@@ -208,4 +245,23 @@ nav {
   @media (max-height: 390px) and (min-width: 768px) {
     display: none;
   }
+}
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+        vertical-align: middle;
+
+        path {
+            fill: #BBBBBB;
+        }
+    }
 }

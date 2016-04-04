@@ -2,11 +2,52 @@
 layout: landing
 ---
 
-  <section>
+
+<div class="wrapper">
+  <section class="top">
     <h1>Riley Parsons</h1>
     <h3>Studying Bioengineering and Entrepreneurship at <a>Santa Clara University</a></h3>
     <h3>Intern at <a>SV Angel</a></h3>
+    <div class="links">
+      <a class="box-link">
+        <div class="content">
+          <div class="title">
+            Projects
+          </div>
+          <div class="description">
+            Here are some of the projects I've done.
+          </div>
+        </div>
+      </a>
+      <a class="box-link">
+        <div class="content">
+          <div class="title">
+            Blog
+          </div>
+          <div class="description">
+            Here are some things I've written.
+          </div>
+        </div>
+      </a>
+    </div>
   </section>
+  <div class="clearout"></div>
+  <nav>
+    {% if site.github_username %}
+      {% include icon-github.html username=site.github_username %}
+    {% endif %}
+
+    {% if site.twitter_username %}
+      {% include icon-twitter.html username=site.twitter_username %}
+    {% endif %}
+    <a href="https://medium.com/@leo">Medium</a>
+    <a href="https://github.com/leo">GitHub</a>
+    <a href="https://twitter.com/lmprht">Twitter</a>
+    <a href="https://dribbble.com/notleo">Dribbble</a>
+    <a href="mailto:mindrun@icloud.com">Mail</a>
+  </nav>
+</div>
+
 
   <!-- ul class="post-list">
     {% for post in site.posts %}
