@@ -85,9 +85,11 @@ div.wrapper{
 /**
  * Links
  */
-a {
-    color: #8ADD8A;
+.top a {
     text-decoration: none;
+    background: #F6F7F7;
+    color: #2F2F2F;
+    padding: 5px;
 
     &:visited {
         color: darken(#8ADD8A, 15%);
@@ -102,19 +104,54 @@ a {
 
 // Links Section
 
-div.links {
+.links {
   width:100%;
   display: flex;
   padding-bottom: 60px;
   margin: 0 auto;
   flex: 1 1 auto;
+
+  h1 {
+    margin-top: 0px;
+    font-size: 36px;
+  }
+
+}
+
+.box-link .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box-link .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #8ADD8A; 
+    opacity:.5;
+    z-index:1;
 }
 
 .box-link {
 	display: block;
   position:relative;
   overflow-y: hidden;
-  background-color: #8ADD8A;
 
 	float: left;
 	top: 35px;
@@ -130,8 +167,13 @@ div.links {
   padding:20px;
 }
 
+.box-link .content .text {
+  position: relative;
+  z-index: 2;
+}
+
 .box-link h1, h2, h3, h4{
-  color:#FFF;
+  color:#F6F7F7;
 
 }
 
@@ -163,7 +205,7 @@ div.content {
 section.top {
 
   h1 {
-    font-weight: normal;
+    font-weight: 900;
     position: relative;
     padding-right: 35px;
     line-height: 1.2em;
@@ -179,7 +221,7 @@ section.top {
     font-weight: normal;
     position: relative;
     padding-right: 35px;
-    line-height: 1.2em;
+    line-height: 1.6em;
 
     &:focus {
       outline: none;
@@ -208,7 +250,7 @@ section.top {
       position: relative;
       left: auto;
       padding-right: 0;
-      color: #fff;
+      color: #F6F7F7;
     }
 
     h2 {
@@ -216,7 +258,7 @@ section.top {
       left: auto;
       top: auto;
       padding-right: 0;
-      color: #fff;
+      color: #F6F7F7;
     }
 
     h3 {
@@ -224,7 +266,7 @@ section.top {
       left: auto;
       top: auto;
       padding-right: 0;
-      color: #fff;
+      color: #F6F7F7;
     }
   }
 }
