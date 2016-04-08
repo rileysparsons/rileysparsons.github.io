@@ -92,7 +92,7 @@ div.wrapper{
     padding: 10px;
 
     &:visited {
-        color: darken(#8ADD8A, 15%);
+        color: #2F2F2F;
     }
 
     &:hover {
@@ -118,6 +118,10 @@ div.wrapper{
 
   h2 {
     line-height: 1.6em;
+  }
+
+  h4 {
+    line-height: 1.8em;
   }
 
   a {
@@ -326,7 +330,8 @@ nav {
       color: #2F2F2F;
       vertical-align: middle;
       &:hover {
-        background: lighten(#8ADD8A, 25%);
+        background: #8ADD8A;
+        color:#F6F7F7;
       }
     }
   }
