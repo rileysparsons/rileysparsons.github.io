@@ -111,6 +111,10 @@ div.wrapper{
   margin: 0 auto;
   flex: 1 1 auto;
 
+  @media (max-width:768px){
+    display: block;
+  }
+
   h1 {
     margin-top: 0px;
     font-size: 36px;
@@ -182,8 +186,10 @@ div.wrapper{
 	float: left;
 	top: 35px;
   padding: 0;
+  width: 100%;
 
   @media (min-width: 768px){
+
     width: 50%;
   }
 
@@ -193,6 +199,7 @@ div.wrapper{
 .box-link>div{
   height: inherit;
   padding:20px;
+
 }
 
 .box-link .content .text {
@@ -200,9 +207,10 @@ div.wrapper{
   z-index: 2;
 }
 
-.box-link h1, h2, h3, h4{
-  color:#F6F7F7;
-
+.box-link {
+  h1, h2, h3, h4 {
+    color:#F6F7F7;
+  }
 }
 
 .box-link h2, h3, h4 {
@@ -231,6 +239,10 @@ div.content {
 }
 
 section.top {
+
+  color: #2F2F2F;
+  margin-bottom: 60px;
+
 
   h1 {
     font-weight: 900;
@@ -273,12 +285,12 @@ section.top {
     right: 0;
     bottom: 0;
     height: inherit;
+    color: #F6F7F7;
 
     h1 {
       position: relative;
       left: auto;
       padding-right: 0;
-      color: #F6F7F7;
     }
 
     h2 {
@@ -286,7 +298,6 @@ section.top {
       left: auto;
       top: auto;
       padding-right: 0;
-      color: #F6F7F7;
     }
 
     h3 {
@@ -294,18 +305,24 @@ section.top {
       left: auto;
       top: auto;
       padding-right: 0;
-      color: #F6F7F7;
     }
   }
 }
 
 nav {
+
   font-family: 'Lato', serif;
   position: absolute;
-  left: 25px;
-  bottom:20px;
-  height: 60px;
   display:block;
+  text-align: center;
+  font-size: 0;
+
+  @media (max-width:768px){
+    position: relative;
+    margin-top:60px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
   a {
     text-decoration: none;
@@ -317,11 +334,13 @@ nav {
   }
 
   @media (min-width: 768px) {
+    
+    white-space: nowrap;
     left: 30px;
     right: 30px;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 0;
+    bottom:20px;
+    height: 60px;
+
 
     a {
       font-size: 17px;
