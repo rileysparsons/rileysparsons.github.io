@@ -349,15 +349,16 @@ section.top {
 nav {
 
   font-family: 'Lato', serif;
-  position: absolute;
+  position: relative;
   display:block;
   text-align: center;
   font-size: 0;
+  margin-top:50px;
   bottom: 20px;
 
   @media (max-width:768px){
     position: relative;
-    margin-top:100px;
+    margin-top: 100px;
     margin-bottom: 30px;
     width: 100%;
   }
@@ -378,9 +379,6 @@ nav {
   @media (min-width: 768px) {
     
     white-space: nowrap;
-    left: 30px;
-    right: 30px;
-
 
     a {
       font-size: 17px;
