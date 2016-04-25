@@ -10,7 +10,7 @@ gems:
   - jekyll-paginate
   - github-pages
 
-paginate: 5
+paginate: 1
 
 # Site settings
 title: Riley
