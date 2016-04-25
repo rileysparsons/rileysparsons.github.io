@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+  - jemoji
+  - jekyll-paginate
+
 # Site settings
 title: Riley
 email: rparsons@scu.edu
