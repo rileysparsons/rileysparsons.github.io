@@ -12,6 +12,8 @@ gems:
 
 paginate: 1
 
+paginate_path: "/blog/page:num/"
+
 # Site settings
 title: Riley
 email: rparsons@scu.edu
