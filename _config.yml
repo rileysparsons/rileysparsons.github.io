@@ -8,6 +8,7 @@
 gems:
   - jemoji
   - jekyll-paginate
+  - github-pages
 
 # Site settings
 title: Riley
