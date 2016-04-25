@@ -26,5 +26,5 @@ url: "http://rileyparsons.com" # the base hostname & protocol for your site
 twitter_username: rileysparsons
 github_username:  rileysparsons
 
-# Build settings
-markdown: kramdown
+
+markdown: redcarpet

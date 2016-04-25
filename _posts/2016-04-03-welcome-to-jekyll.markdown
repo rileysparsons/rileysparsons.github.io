@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mediator/post
 title:  "Welcome to Jekyll!"
 date:   2016-04-03 10:00:59 -0700
 categories: jekyll update
