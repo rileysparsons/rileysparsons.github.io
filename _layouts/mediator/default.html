@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include mediator/head.html %}
+
+  <body>
+
+    {% include mediator/header.html %}
+
+    <!-- content start -->
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- content end -->
+
+    {% include mediator/footer.html %}
+    {% include mediator/javascripts.html %}
+
+  </body>
+
+</html>
