@@ -409,6 +409,9 @@ nav {
   display:inline;
   margin-right: 25px;
   margin-left: 0px;
+  @media (max-width: 768px){
+    display:none;
+  }
 }
 
 /**
