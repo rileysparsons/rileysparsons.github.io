@@ -32,12 +32,12 @@ markdown: redcarpet
 
 logo: "/resources/images/logo.png"
 
-
 cover: "/resources/images/background_image.jpg"
 
 name: 'Riley Parsons'
 author: 'Riley Parsons'
 author_image: "/resources/images/Riley.jpg"
+
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
