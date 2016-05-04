@@ -1,75 +1,95 @@
 ---
-layout: mediator/default
+layout: 
 title: Blog
 ---
+<!DOCTYPE html>
+<html>
 
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
-        Teaser Image
-    </div>
-</div>
+  {% include mediator/head.html %}
 
-<header class="blog-header">
-    {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}/blog" style="background-image: url('{{ site.logo }}'); background-size: 60% 60%; background-repeat:no-repeat; background-position: center center">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">Here are some of the projects I've worked on over the years.</h2>
-    <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-      <a href="{{site.url}}">rileyparsons.com</a>
-    </div>
-</header>
-<main class="content" role="main">
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        {% if post.categories contains 'projects'%}
-          <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            <div class="article-item">
-              <header class="post-header">
-                <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-              </header>
-              <section class="post-excerpt" itemprop="description">
-                <p>{{ post.summary | strip_html | truncatewords: 50 }}</p>
-              </section>
-              <div class="post-meta">
-                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-    <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-              </div>
-            </div>
-          </article>
+  <body>
+    {% include mediator/projects_header.html %}
+    <!-- content start -->
+    <div class="page-content">
+      <div class="wrapper">
+      <div class="teaserimage">
+          <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+              Teaser Image
+          </div>
+      </div>
+
+      <header class="blog-header">
+          {% if site.logo %}
+            <a class="blog-logo" href="{{site.url}}/projects" style="background-image: url(/resources/images/project_logo.png); background-size: 60% 60%; background-repeat:no-repeat; background-position: center center">{{ site.title }}</a>
           {% endif %}
-      {% endfor %}
-    </div>
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
-    <div class="cf frame">
-      {% for post in site.posts %}
-        {% if post.categories contains 'projects'%}
-          <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            <div class="article-item">
-              <header class="post-header">
-                <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-              </header>
-              <section class="post-excerpt" itemprop="description">
-                <p>{{ post.summary | strip_html | truncatewords: 50 }}</p>
-              </section>
-              <div class="post-meta">
-                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-              </div>
-            </div>
-          </article>
+          <h1 class="blog-title">{{ site.title }}</h1>
+          <h2 class="blog-description">Here are some of the projects I've worked on over the years.</h2>
+          <div class="custom-links">
+            {% for social in site.social %}
+              {% if social.url %}
+                  <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+                    <i class="fa fa-{{ social.icon }}"></i>
+                  </a>
+                  &nbsp;&nbsp;·&nbsp;&nbsp;
+              {% endif %}
+            {% endfor %}
+            <a href="{{site.url}}">rileyparsons.com</a>
+          </div>
+      </header>
+      <main class="content" role="main">
+          {% if site.tags.featured %}
+          <h5 class="index-headline featured"><span>Featured</span></h5>
+          <div class="container featured">
+            {% for post in site.tags.featured %}
+              {% if post.categories contains 'projects'%}
+                <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                  <div class="article-item">
+                    <header class="post-header">
+                      <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                    </header>
+                    <section class="post-excerpt" itemprop="description">
+                      <p>{{ post.summary | strip_html | truncatewords: 50 }}</p>
+                    </section>
+                    <div class="post-meta">
+                      <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+          <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+                    </div>
+                  </div>
+                </article>
+                {% endif %}
+            {% endfor %}
+          </div>
+          <h5 class="index-headline normal"><span>Regular</span></h5>
           {% endif %}
-      {% endfor %}
+          <div class="cf frame">
+            {% for post in site.posts %}
+              {% if post.categories contains 'projects'%}
+                <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                  <div class="article-item">
+                    <header class="post-header">
+                      <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                    </header>
+                    <section class="post-excerpt" itemprop="description">
+                      <p>{{ post.summary | strip_html | truncatewords: 50 }}</p>
+                    </section>
+                    <div class="post-meta">
+                      <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+        <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+                    </div>
+                  </div>
+                </article>
+                {% endif %}
+            {% endfor %}
+          </div>
+      </main>
     </div>
-</main>
+    </div>
+
+    <!-- content end -->
+
+    {% include mediator/footer.html %}
+    {% include mediator/javascripts.html %}
+
+  </body>
+
+</html>
