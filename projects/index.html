@@ -1,6 +1,6 @@
 ---
 layout: 
-title: Blog
+title: Riley Parsons - Projects
 ---
 <!DOCTYPE html>
 <html>
@@ -40,8 +40,8 @@ title: Blog
           {% if site.tags.featured %}
           <h5 class="index-headline featured"><span>Featured</span></h5>
           <div class="container featured">
-            {% for post in site.tags.featured %}
-              {% if post.categories contains 'projects'%}
+            {% for post in site.projects %}
+              {% if post.tags contains 'featured' %}
                 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                   <div class="article-item">
                     <header class="post-header">
@@ -56,14 +56,13 @@ title: Blog
                     </div>
                   </div>
                 </article>
-                {% endif %}
+              {% endif %}
             {% endfor %}
           </div>
           <h5 class="index-headline normal"><span>Regular</span></h5>
           {% endif %}
           <div class="cf frame">
-            {% for post in site.posts %}
-              {% if post.categories contains 'projects'%}
+            {% for post in site.projects %}
                 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
                   <div class="article-item">
                     <header class="post-header">
@@ -78,7 +77,6 @@ title: Blog
                     </div>
                   </div>
                 </article>
-                {% endif %}
             {% endfor %}
           </div>
       </main>

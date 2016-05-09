@@ -1,6 +1,6 @@
 ---
 layout: mediator/default
-title: Blog
+title: Riley Parsons - Blog
 ---
 
 <div class="teaserimage">
@@ -27,6 +27,7 @@ title: Blog
       <a href="{{site.url}}">rileyparsons.com</a>
     </div>
 </header>
+
 <main class="content" role="main">
     {% if site.tags.featured %}
     <h5 class="index-headline featured"><span>Featured</span></h5>
@@ -68,19 +69,21 @@ title: Blog
         </article>
       {% endfor %}
     </div>
+    {% if paginator.total_pages > 1 %}
     <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
       {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href="/">Newer posts &rarr;</a>
+        {% if paginator.previous_page == 1 %}
+          <a class="older-posts" href="/blog/">&larr; Newer posts</a>
         {% else %}
-          <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+          <a class="older-posts" href="/blog/page{{paginator.previous_page}}">&larr; Newer posts</a>
         {% endif %}
       {% endif %}
+      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a class="newer-posts" href="/blog/page{{paginator.next_page}}">Older posts &rarr;</a>
+      {% endif %}
     </nav>
+    {% endif %}
     <!-- {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}} -->
 </main>

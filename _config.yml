@@ -71,3 +71,11 @@ social:
 #    share_url:
 #    share_title:
 #    share_link:
+
+collections: 
+  - projects
+
+collections:
+  projects:
+    output: true
+
