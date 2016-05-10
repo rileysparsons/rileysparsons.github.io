@@ -21,12 +21,14 @@ title: Riley Parsons
             <a href="{{site.url}}/projects"><h1><span class="highlighted">Projects</span></h1></a>
             <br>
             <br>
-            <a><h2><span class="highlighted">Spree</span></h2></a>
-            <h4><span class="highlighted">A hyperlocal marketplace for students</span></h4>
+            {% for project in site.projects limit:1%}
+            <a href="{{post.url}}"><h2><span class="highlighted">{{project.title}}</span></h2></a>
+            <h4><span class="highlighted">{{project.summary}}</span></h4>
           </div>
-          <div class="layer"></div>
-          <div class="image" style="background-image:url(resources/computer_gaze_stock-min.jpg)"></div>
         </div>
+        <div class="image" style="background-image:url({{project.image}})"></div>
+        <div class="layer"></div>
+        {% endfor %}
       </div>
       <div class="box-link">
         <div class="content">

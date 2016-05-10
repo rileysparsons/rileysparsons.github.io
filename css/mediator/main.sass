@@ -42,15 +42,23 @@ body
   -o-font-feature-settings: "liga", "dlig"
   font-feature-settings: "liga", "dlig"
 
-.logo-readium
+.readium-container
   position: fixed
+  display: block
   left: 10px
   top: 10px
+  z-index: 99
+
+.logo-readium
+  position: relative
+  display: block
+  float: left
+  margin: 10px
   width: $rs*3
   height: $rs*3
   background-color: $light-black
   overflow: hidden
-  z-index: 99
+
   .logo
     display: block
     position: absolute
