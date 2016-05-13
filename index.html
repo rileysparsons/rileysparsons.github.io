@@ -6,23 +6,24 @@ title: Riley Parsons
 
 <div class="wrapper">
   <section class="top">
-    <div class="headline">
-      <span><div id="logo"></div></span>
-      <span><h1>Riley Steele Parsons</h1></span>
-    </div>
-    <h2>Studying Bioengineering and Entrepreneurship at <a href="https://www.scu.edu/">Santa Clara University</a></h2>
+  <a href="{{ site.url }}/" class="logo-link"><span class="logo"></span></a>
+    <h1>Riley Steele Parsons</h1>
+    <h2>Studying Bioengineering and Entrepreneurship at <a class="text-link" href="https://www.scu.edu/">Santa Clara University</a></h2>
     <br>
-    <h2>Intern at <a href="http://svangel.com/">SV Angel</a></h2>
+    <h2>Intern at <a class="text-link" href="http://svangel.com/">SV Angel</a></h2>
   </section>
   <section class="links">
       <div class="box-link" id="projects">
         <div class="content">
           <div class="text">
-            <a href="{{site.url}}/projects"><h1><span class="highlighted">Projects</span></h1></a>
+            <a class="link-container" href="{{ site.url }}/projects">
+              <div class="logo-link"><span id="projects" class="logo" style="background-image: url(/resources/images/project_logo_light.png)"></span></div>
+              <div class="text-link"><h1><span class="highlighted">Projects</span></h1></div>
+            </a>
             <br>
             <br>
             {% for project in site.projects limit:1%}
-            <a href="{{post.url}}"><h2><span class="highlighted">{{project.title}}</span></h2></a>
+            <a class= "article-link" href="{{post.url}}"><h2><span class="highlighted">{{project.title}}</span></h2></a>
             <h4><span class="highlighted">{{project.summary}}</span></h4>
           </div>
         </div>
@@ -33,11 +34,14 @@ title: Riley Parsons
       <div class="box-link">
         <div class="content">
           <div class="text">
-            <a href="{{site.url}}/blog"><h1><span class="highlighted">Blog</span></h1></a>
+            <a class="link-container" href="{{ site.url }}/blog">
+              <div class="logo-link"><span id="blog" class="logo" style="background-image: url(/resources/images/blog_logo_light.png)"></span></div>
+              <div class="text-link"><h1><span class="highlighted">Blog</span></h1></div>
+            </a>
             <br>
             <br>
             {% for post in site.posts limit:1%}
-            <a href="{{post.url}}"><h2><span class="highlighted">{{post.title}}</span></h2></a>
+            <a class="article-link" href="{{post.url}}"><h2><span class="highlighted">{{post.title}}</span></h2></a>
             <h4><span class="highlighted">{{post.date| date: '%B %d, %Y' }}</span></h4>
           </div>
         </div>

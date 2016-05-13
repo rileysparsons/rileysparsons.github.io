@@ -60,7 +60,7 @@ html, body {
 
 body {
   width: 100%;
-  background: #fff;
+  background: #F6F7F7;
   font-family: 'Lato', serif;
 
   @media (min-width: 768px) {
@@ -93,7 +93,10 @@ div.wrapper{
 /**
  * Links
  */
-.top a {
+.top { 
+
+  a.text-link {
+
     text-decoration: none;
 
     background: #2F2F2F;
@@ -132,10 +135,9 @@ div.wrapper{
         background: #8ADD8A;
       }
 
+    } 
+  }
 
-    }
-
-    
 }
 
 // Links Section
@@ -166,24 +168,76 @@ div.wrapper{
     line-height: 1.8em;
   }
 
-  a {
-    text-decoration: none;
-    color: #2F2F2F;
-
-    &:visited {
-        color: darken(#8ADD8A, 15%);
-    }
-
+  .link-container {
     &:hover {
       cursor: pointer;
-      span {
+
+      .logo-link {
         background: #F6F7F7;
-        box-shadow: 10px 0 0 #F6F7F7, -10px 0 0 #F6F7F7;
-        color: #2F2F2F;
+        span#projects {
+          background-image: url(../../resources/images/project_logo.png) !important;
+          box-shadow: 10px 0 0 #F6F7F7, -10px 0 0 #F6F7F7;
+          color: #2F2F2F;
+        }
+
+        span#blog {
+          background-image: url(../../resources/images/blog_logo.png) !important;
+          box-shadow: 10px 0 0 #F6F7F7, -10px 0 0 #F6F7F7;
+          color: #2F2F2F;
+        }
+      }
+
+      .text-link {
+
+        span {
+          background: #F6F7F7;
+          box-shadow: 10px 0 0 #F6F7F7, -10px 0 0 #F6F7F7;
+          color: #2F2F2F;
+        }
+
       }
     }
   }
 
+  .logo-link {
+      left: -10px;
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      float: left;
+      height: 55px;
+      width: 55px;
+      background-color: #2F2F2F;
+      overflow: hidden;
+      background: #2F2F2F;
+
+    .logo {
+      height: 40px;
+      width: 40px;
+      top:7px;
+      left:7px;
+      display: block;
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .text-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #2F2F2F;
+  }
+
+  .article-link {
+    &:hover {
+      span {
+          background: #F6F7F7;
+          box-shadow: 10px 0 0 #F6F7F7, -10px 0 0 #F6F7F7;
+          color: #2F2F2F;
+        }
+    }
+  }
 }
 
 .box-link .image {
@@ -262,6 +316,7 @@ div.wrapper{
 }
 
 .highlighted {
+  display: inline-block;
   position: relative;
   background: #2F2F2F;
   padding: 5px 0px;
@@ -290,6 +345,7 @@ section.top {
 
 
   h1 {
+    display: inline-block;
     font-weight: 900;
     position: relative;
     padding-right: 35px;
@@ -325,9 +381,66 @@ section.top {
     }
   }
 
+  .headline {
+    display: block;
+  }
+
+  .logo-link  {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      margin-top: 35px;
+      float: left;
+      height: 55px;
+      width: 55px;
+      background-color: #2F2F2F;
+      background: #2F2F2F;
+      overflow: hidden;
+
+    .logo {
+      background-image: url(../../resources/images/logo_light.png);
+      z-index: 99;
+      top: 7px;
+      left: 7px;
+      height: 40px;
+      width: 40px;
+      display: block;
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+     &:hover {
+      cursor: pointer;
+      background: #8ADD8A;
+      .logo {
+        background-image: url(../../resources/images/logo.png);
+        box-shadow: 10px 0 0 #8ADD8A, -10px 0 0 #8ADD8A;
+      }
+    }
+  }
+
+
   @media (min-width: 768px) {
     height: inherit;
     color: #F6F7F7;
+
+    .logo-link  {
+      background-color: #F6F7F7;
+
+      .logo {
+        background-image: url(../../resources/images/logo.png);
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: #8ADD8A;
+        .logo {
+          background-image: url(../../resources/images/logo.png);
+          box-shadow: 10px 0 0 #8ADD8A, -10px 0 0 #8ADD8A;
+        }
+     }
+    }    
 
     h1 {
       position: relative;
@@ -400,19 +513,6 @@ nav {
   }
 }
 
-#logo {
-  background-image: url('/resources/images/logo_light.png');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  float: left;
-  display:inline;
-  margin-right: 25px;
-  margin-left: 0px;
-  @media (max-width: 768px){
-    display:none;
-  }
-}
 
 /**
  * Icons
