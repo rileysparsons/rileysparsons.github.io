@@ -1,5 +1,5 @@
 ---
-layout: mediator/post
+layout: mediator/project
 title:  "Coming Soon"
 summary: "Thanks for your interest"
 date:   2016-05-09 16:00:00
