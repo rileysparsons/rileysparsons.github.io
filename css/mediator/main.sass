@@ -230,13 +230,19 @@ body
   line-height: 44px
   display: inline-block
   white-space: nowrap
-  color: rgba(0,0,0,0.25)
+  color: $off-white
   font-size: 14px
   letter-spacing: -0.02em
   font-weight: 400
   font-style: normal
   font-family: $font-sans
   z-index: 999
+  .highlighted 
+    position: relative
+    background: $light-black
+    padding: 5px 0px
+    box-shadow: 10px 0 0 $light-black, -10px 0 0 $light-black
+
 .tag-articleimage .post-reading
   color: rgba(255,255,255,0.9)
   text-shadow: 0px 1px 4px rgba(0,0,0,0.25), 0px 0px 1px rgba(0,0,0,0.5)
@@ -347,6 +353,7 @@ body
       font-family: $font-sans
       white-space: nowrap
       text-overflow: ellipsis
+      margin-top: 10px
       a
         color: rgba(255,255,255,0.75)
         &:hover
@@ -446,6 +453,7 @@ body
     figure
       margin: 0
       padding: 0 0 30px
+      text-align: center
     figcaption
       font-weight: 400
       font-style: italic

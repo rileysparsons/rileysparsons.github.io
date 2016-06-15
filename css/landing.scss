@@ -361,6 +361,11 @@ body {
   }
 
   @media (max-height: 680px) and (min-width: 768px){
+
+    h1 {
+      font-size: 28px;
+    }
+
     h2 {
       display: none;
     }
@@ -368,6 +373,8 @@ body {
     h4 {
       display: none;
     }
+
+
   }
 
   .link-container {
@@ -421,6 +428,13 @@ body {
         margin-bottom:10px;
       }
 
+      @media (max-height: 680px) and (min-width: 768px){
+        height: 45px;
+        width: 45px;
+        margin-top:0px;
+        margin-bottom:0px;
+      }
+
     .logo {
       height: 40px;
       width: 40px;
@@ -436,6 +450,12 @@ body {
         width: 30px;
       }
 
+      @media (max-height: 680px) and (min-width: 768px){
+        height: 30px;
+        width: 30px;
+        top: 7px;
+        left: 7px;
+      }
     }
   }
 
@@ -600,9 +620,18 @@ nav {
     }
   }
 
+
+
   @media (max-height: 390px) and (min-width: 768px) {
     display: none;
   }
+
+  @media (max-height: 680px) and (min-width: 768px){
+    a {
+      margin-bottom: 40px;
+    }
+  }
+
 }
 
 
