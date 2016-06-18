@@ -29,6 +29,8 @@ $content-width:    800px;
 $on-palm:          768px;
 $on-laptop:        800px;
 
+$compact-height:   580px;
+
 
 
 // Use media queries like this:
@@ -147,7 +149,7 @@ body {
     height: 40%;
   }
 
-  @media (max-height: 680px) and (min-width: 768px){
+  @media (max-height: $compact-height) and (min-width: 768px){
     // height: 30%
   }
 
@@ -168,7 +170,7 @@ body {
       font-size: 30px;
     }
 
-    @media (max-height: 680px) and (min-width: 768px){
+    @media (max-height: $compact-height) and (min-width: 768px){
       margin-top: 25px;
       font-size: 30px;
     }
@@ -185,11 +187,20 @@ body {
       outline: none;
     }
 
-    @media (max-width:768px){
-      font-size: 18px;
+    br {
+      display:none;
     }
 
-    @media (max-height: 680px) and (min-width: 768px){
+    @media (max-width:768px){
+      font-size: 18px;
+      br {
+        display: block;
+      }
+
+
+    }
+
+    @media (max-height: $compact-height) and (min-width: 768px){
       font-size: 18px;
     }
 
@@ -208,7 +219,7 @@ body {
       font-size: 16px;
     }
 
-    @media (max-height: 680px) and (min-width: 768px){
+    @media (max-height: $compact-height) and (min-width: 768px){
       font-size: 16px;
     }
   }
@@ -235,7 +246,7 @@ body {
         width: 45px;
       }
 
-      @media (max-height:680px) and (min-width: 768px){
+      @media (max-height:$compact-height) and (min-width: 768px){
         margin-top: 20px;
         height: 45px;
         width: 45px;
@@ -258,7 +269,7 @@ body {
         width: 30px;
       }
 
-      @media (max-height:680px){
+      @media (max-height:$compact-height){
         height: 30px;
         width: 30px;
       }
@@ -358,9 +369,10 @@ body {
     h4 {
       display: none;
     }
+
   }
 
-  @media (max-height: 680px) and (min-width: 768px){
+  @media (max-height: $compact-height) and (min-width: 768px){
 
     h1 {
       font-size: 28px;
@@ -374,7 +386,9 @@ body {
       display: none;
     }
 
-
+    br {
+      display: none;
+    }
   }
 
   .link-container {
@@ -428,7 +442,7 @@ body {
         margin-bottom:10px;
       }
 
-      @media (max-height: 680px) and (min-width: 768px){
+      @media (max-height: $compact-height) and (min-width: 768px){
         height: 45px;
         width: 45px;
         margin-top:0px;
@@ -450,7 +464,7 @@ body {
         width: 30px;
       }
 
-      @media (max-height: 680px) and (min-width: 768px){
+      @media (max-height: $compact-height) and (min-width: 768px){
         height: 30px;
         width: 30px;
         top: 7px;
@@ -570,7 +584,7 @@ div.content {
     padding: 40px 60px;
   }
 
-  @media (max-height: 680px) and (min-width: 768px){
+  @media (max-height: $compact-height) and (min-width: 768px){
     padding: 5%;
   }
 }
@@ -626,7 +640,7 @@ nav {
     display: none;
   }
 
-  @media (max-height: 680px) and (min-width: 768px){
+  @media (max-height: $compact-height) and (min-width: 768px){
     a {
       margin-bottom: 40px;
     }

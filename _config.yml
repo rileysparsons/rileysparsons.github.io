@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Riley Steele Parsons's personal website.
 
 blog_description: > # this means to ignore newlines until "baseurl:"
-  This is my blog, where I talk about things that I'm interested in.
+  I'll post things here when time allows
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rileyparsons.com" # the base hostname & protocol for your site
@@ -65,12 +65,12 @@ social:
     share_title:
     share_link:
 
-#  - icon:  google-plus
-#    url: https://google.com/???
-#    desc:  Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+  - icon:  instagram
+    url: https://www.instagram.com/rileysparsons/
+    desc:  Follow me on Instagram
+    share_url: 
+    share_title:
+    share_link:
 
 collections: 
   - projects
