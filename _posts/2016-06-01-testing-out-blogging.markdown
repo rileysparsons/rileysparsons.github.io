@@ -1,7 +1,7 @@
 ---
 layout: mediator/post
 title:  "Can I Blog Using My iPad"
-date:   2016-07-01 16:00:00
+date:   2016-06-01 16:00:00
 tags: featured
 image: /resources/mediator/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
 ---
