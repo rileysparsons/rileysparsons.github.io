@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: mediator/post
 title: "Testing out this"
 tags:
 ---
 
-#Hello World
+#Hello Worl
