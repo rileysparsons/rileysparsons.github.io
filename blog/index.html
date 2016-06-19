@@ -15,6 +15,11 @@ title: Riley Parsons - Blog
     {% endif %}
     <h1 class="blog-title">Riley's Blog</h1>
     <h2 class="blog-description">{{ site.blog_description }}</h2>
+    <h2 class="blog-description">
+      {% if site.tags.travel.first.location %}
+        {{ site.tags.travel.first.location}}
+      {% endif %}
+    </h2>
     <div class="custom-links">
       {% for social in site.social %}
         {% if social.url %}

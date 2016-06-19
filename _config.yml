@@ -45,7 +45,8 @@ author_image: "/resources/images/riley.jpg"
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
 
-# social icons and sharing options
+# social icons and sharing option
+
 social:
   - icon: twitter
     url:  https://twitter.com/rileysparsons
