@@ -3,8 +3,8 @@ layout: mediator/post
 title:  "Mediator Features"
 date:   2014-11-30 14:34:25
 tags: featured
-image: /resources/mediator/article_images/2014-11-30-mediator_features/night-track.JPG
-image2: /resources/mediator/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+image: https://dl.dropboxusercontent.com/u/97568650/rileyparsons.com/photos/article-images/2014-11-30-mediator_features/night-track.jpg
+image2: https://dl.dropboxusercontent.com/u/97568650/rileyparsons.com/photos/article-images/2014-11-30-mediator_features/night-track-mobile.jpg
 ---
 #Mediator Formats and CSS features
 

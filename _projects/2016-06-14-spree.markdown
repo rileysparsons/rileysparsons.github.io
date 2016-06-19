@@ -2,7 +2,7 @@
 layout: mediator/project
 title:  "Spree"
 summary: "A hyperlocal marketplace for students"
-start_date:   2016-06-14 16:00:00
+start_date:   2014-12-01 08:00:00
 tags: featured
 image: /resources/images/spree_image.jpg
 ---
@@ -10,7 +10,7 @@ image: /resources/images/spree_image.jpg
 *[Download](https://itunes.apple.com/us/app/spree-student-marketplace/id965705751?mt=8) Spree on the Apple App Store.*
 
 #Summary
-Spree was founded by myself and [Marco Ciccone](https://www.linkedin.com/in/mciccone10) in late 2014 in order to enable students to sell secondhand items like textbooks and furniture to other students, using their smartphones. 
+Spree was founded by [Marco Ciccone](https://www.linkedin.com/in/mciccone10) and I in late 2014 in order to enable students to sell secondhand items like textbooks and furniture to other students, using their smartphones. 
 
 By March 2015, I had developed a rough prototype native iOS application that allowed users to login with their school email addresses, post items, and communicate with each other. 
 
@@ -21,7 +21,7 @@ In late May 2015 we debuted the first release of Spree for iOS on the Apple App 
 #Development Process
 In December 2014, I began researching how I might build an app that would allow users to post an item to Spree, and browse for items to purchase, and contact each other when needed. Parse was selected as the backend for the app because I had worked with it previously while developing SceneScope, and it was a fastest way to get the app up and running.
 
-![Browsing for items on the first Spree prototype](/resources/images/spree_prototype_demo.gif) 
+![Browsing for items on the first Spree prototype]({{site.cdn_path}}/photos/spree_prototype_demo.gif) 
 
 The initial version of Spree contained a tab bar with three different views: "All", "Categories", and "More". Posts could be created while browsing in the All tab within a primitive view that prompted users to fill in information on what they were selling. The fields included "Title", "Price", "Description", with other fields like "Class" when posting a textbook for sale. Also, users were able to include up to three photos of the item they were selling by selecting the "Add Photo" buttons on the bottom of their screen.
 
@@ -29,3 +29,6 @@ In the next major iteration of the app, a "Messages" tab was added to the tab ba
 
 ![In-app messaging created a smoother transaction process and increased user retention] (/resources/images/messages_demo.gif)
 
+Over Summer 2015, the onboarding and new post creation workflow was completely overhauled in order to better the user experience and expand the functionality of the app. Also, we chose to simplify the app's color scheme, opting for the use of simple grey and white tints with blue as a minor accent color. 
+
+![In Fall 2015 we debuted a new version of the app that featured a much cleaner color scheme and overall UI] (/resources/images/Nov2015Spree.png)
