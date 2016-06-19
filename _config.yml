@@ -29,6 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rileyparsons.com" # the base hostname & protocol for your site
 twitter_username: rileysparsons
 github_username:  rileysparsons
+linkedin_username: rileysparsons
 
 markdown: redcarpet
 
@@ -70,6 +71,13 @@ social:
   - icon:  instagram
     url: https://www.instagram.com/rileysparsons/
     desc:  Follow me on Instagram
+    share_url: 
+    share_title:
+    share_link:
+
+  - icon:  linkedin
+    url: https://www.linkedin.com/in/rileysparsons
+    desc:  Connect with me on LinkedIn
     share_url: 
     share_title:
     share_link:
