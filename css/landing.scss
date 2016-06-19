@@ -196,8 +196,6 @@ body {
       br {
         display: block;
       }
-
-
     }
 
     @media (max-height: $compact-height) and (min-width: 768px){
@@ -370,6 +368,9 @@ body {
       display: none;
     }
 
+    br {
+      display: none;
+    }
   }
 
   @media (max-height: $compact-height) and (min-width: 768px){
