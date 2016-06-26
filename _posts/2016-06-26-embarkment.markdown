@@ -1,7 +1,7 @@
 ---
 layout: mediator/post
 title:  "Embarkment"
-date:   2016-06-28 07:00:00
+date:   2016-06-26 11:22:00
 tags:
 - featured
 - travel
