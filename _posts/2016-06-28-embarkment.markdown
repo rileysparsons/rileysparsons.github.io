@@ -15,4 +15,6 @@ You can follow my trip on this blog- I'll be posting photos and recaps when I ca
 
 For an overview of where we'll be going check out this map:
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1jOfZMcNdYAr1BOOaIl2zdY9wV64&z=3&ll=31.0,57.0" width="640" height="480"></iframe>
+<div class="map-container">
+	<iframe src="https://www.google.com/maps/d/embed?mid=1jOfZMcNdYAr1BOOaIl2zdY9wV64&z=3&ll=31.0,57.0" class="map"></iframe>
+</div>
