@@ -15,4 +15,4 @@ After dropping off our bags in our room on the 4th floor, we headed back to Fran
 
 Fast forward six hours and we were back in Frankfurt Hbf, ready to grab our cash and head northwest for Berlin. Unfortunately, the office was not able to refund us the lost cash on the spot and said they would deposit it directly into one of our bank accounts. With that, we decided to purchase our tickets to Berlin from one of the representatives at the office, and head to Berlin on the 7:02 train.
 
-![ICE 2nd Class Seat from Frankfurt to Berlin]({{site.cdn-path}}/2016-07-01-heading-east/Movingtrain.GIF)
+![ICE 2nd Class Seat from Frankfurt to Berlin]({{site.cdn_path}}/2016-07-01-heading-east/Movingtrain.GIF)
