@@ -2,7 +2,7 @@
 layout: mediator/post
 title:  Heading East
 tags: featured
-image: /resources/mediator/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
+image: https://dl.dropboxusercontent.com/u/97568650/rileyparsons.com/photos/article-images/2016-07-01-heading-east/reichstag.jpeg
 ---
 
 #Frankfurt
@@ -15,4 +15,4 @@ After dropping off our bags in our room on the 4th floor, we headed back to Fran
 
 Fast forward six hours and we were back in Frankfurt Hbf, ready to grab our cash and head northwest for Berlin. Unfortunately, the office was not able to refund us the lost cash on the spot and said they would deposit it directly into one of our bank accounts. With that, we decided to purchase our tickets to Berlin from one of the representatives at the office, and head to Berlin on the 7:02 train.
 
-![ICE 2nd Class Seat from Frankfurt to Berlin]({{site.cdn_path}}/photos/article-images/2016-07-01-heading-east/Movingtrain.GIF)
+![ICE 2nd Class Seat from Frankfurt to Berlin]({{site.cdn_path}}/photos/article-images/2016-07-01-heading-east/Movingtrain.GIF
