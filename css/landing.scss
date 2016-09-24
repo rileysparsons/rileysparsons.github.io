@@ -531,7 +531,8 @@ body {
   width: 100%;
 
   @media (min-width: 768px){
-    width: 50%;
+    // Set as 50% when blog is present.
+    // width: 50%;
   }
 
 
