@@ -7,8 +7,6 @@ tags: featured
 image: https://dl.dropboxusercontent.com/u/97568650/rileyparsons.com/photos/project-images/2016-06-14-spree/spree_image.jpg
 ---
 
-*[Download](https://itunes.apple.com/us/app/spree-student-marketplace/id965705751?mt=8) Spree on the Apple App Store.*
-
 #Summary
 Spree was founded by myself and [Marco Ciccone](https://www.linkedin.com/in/mciccone10) in late 2014 in order to enable students to sell secondhand items like textbooks and furniture to other students, using their smartphones. 
 
